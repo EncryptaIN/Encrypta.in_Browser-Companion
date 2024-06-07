@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <script src="FontAwesome.js"></script>
+    <title>Browser Companion - Extension popup view | encrypta.in</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div style="margin: 0.2rem 0; width: 100%;">
+                <div id="AuthenticatorConnection">
+                </div>
+                <div id="UserAccount">
+                </div>
+                <div id="SessionSecure">
+                </div>
+            </div>
+            <div style="margin: 0.2rem 0; width: 100%;">
+                <div class="nav-item " id="Page" data-nav-action="Page">Page</div>
+                <div class="nav-item " id="Authenticator" data-nav-action="Authenticator">Authenticator</div>
+                <div class="nav-item " id="Profile" data-nav-action="Profile">My profile</div>
+            </div>
+            <div style="text-align: center; width: 90%; margin: 0.4rem auto;">
+                <div style="font-weight: 600; font-size: 0.8rem; line-height: 1.6rem;">
+                    Browser Companion
+                </div>
+                <!-- <div style="font-weight: 500; font-size: 0.8rem; line-height: 1.2rem;">
+                    Chromium Build 
+                </div> -->
+                <div style="font-weight: 500; font-size: 0.7rem; line-height: 1.0rem;">
+                    Encrypta.in
+                </div>
+            </div>
+        </div>
+        <div id="canvas" class="viewer">
+
+
+        </div>
+    </div>
+    <script src="/workers/navigator.js" defer></script>
+</body>
+
+</html>

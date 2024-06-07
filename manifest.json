@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Encrypta - Browser Companion",
+  "version": "1.0.1",
+  "description": "Your chromium based browser Companion powered by Encrypta Auth. Product by Encrypta.in.",
+  "background": {
+    "service_worker": "workers/background.js"
+  },
+  "icons": {
+    "16": "icons/encrypta-favicon16.png",
+    "32": "icons/encrypta-favicon32.png",
+    "48": "icons/encrypta-favicon48.png",
+    "128": "icons/encrypta-favicon128.png"
+  },
+  "action": {
+    "default_popup": "Views/index.html",
+    "default_title": "Encrypta Browser Companion  - Chromium Build",
+    "default_icon": {
+      "16": "icons/encrypta-favicon16.png",
+      "32": "icons/encrypta-favicon32.png",
+      "48": "icons/encrypta-favicon48.png",
+      "128": "icons/encrypta-favicon128.png"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["DOM/dom_injection_script.js"],
+    "css": ["DOM/dom_style.css"]
+  }],
+  "permissions": ["storage", "activeTab", "declarativeContent", "contextMenus", "unlimitedStorage"]
+}
