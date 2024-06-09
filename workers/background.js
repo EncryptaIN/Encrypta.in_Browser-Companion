@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(async () => {
-    let url = chrome.runtime.getURL('Pages/Home.html')
+    let url = 'https://demo.extension.encrypta.in/Release/V1.1.2'
     let tab = await chrome.tabs.create({
         url
     })
